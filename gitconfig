@@ -1,0 +1,24 @@
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[alias]
+    vdiff = difftool
+    st = status
+    co = checkout
+    br = branch
+    ci = commit -v -S
+[user]
+    name = Casper Thomsen
+    email = ct@clearhaus.com
+    signingkey = C30AEE09
+[color]
+    ui = true
+[github]
+    user = ct-clearhaus
+    password = !pass show github.com/clearhaus
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool]
+    prompt = false
