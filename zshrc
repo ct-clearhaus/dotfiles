@@ -1,6 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bureau"
-COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
