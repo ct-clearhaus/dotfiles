@@ -15,10 +15,10 @@ plugins=(git pass vim ruby docker)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-
 export EDITOR=vim
 bindkey -v
 
 alias dkr='sudo docker'
 alias dkrl='dkr ps -l -q'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
