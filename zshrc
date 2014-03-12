@@ -11,14 +11,16 @@ ZSH_THEME="bureau"
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git pass vim ruby docker)
+plugins=(git gitignore pass vim ruby heroku)
 
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
 bindkey -v
 
-alias dkr='sudo docker'
-alias dkrl='dkr ps -l -q'
+#alias dkr='sudo docker'
+#alias dkrl='dkr ps -l -q'
+alias dl='docker ps -l -q -notrunc'
 
+PATH=$HOME/bin:$PATH
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
