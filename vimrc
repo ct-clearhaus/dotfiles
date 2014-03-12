@@ -12,6 +12,7 @@ Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 Bundle 'Syntastic'
 Bundle 'git://github.com/digitaltoad/vim-jade.git'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'ekalinin/Dockerfile.vim'
 
 Bundle 'https://github.com/altercation/vim-colors-solarized.git'
 colorscheme solarized
