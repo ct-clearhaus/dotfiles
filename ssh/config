@@ -2,3 +2,8 @@ Host lm
 Hostname lm27.spag.dk
 User ct
 IdentityFile ~/.ssh/id_rsa
+
+Host docker-registry
+Hostname docker.clrhs.dk
+User ct
+IdentityFile ~/.ssh/id_rsa
