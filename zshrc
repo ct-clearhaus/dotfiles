@@ -20,7 +20,16 @@ bindkey -v
 
 #alias dkr='sudo docker'
 #alias dkrl='dkr ps -l -q'
-alias dl='docker ps -l -q -notrunc'
+alias dl='docker ps -l -q --no-trunc'
+docker_cleanup_all() {
+    echo 'Cleaning up containers:'
+    docker rm `docker ps -a -q --no-trunc`
+    echo
+    echo 'Cleaning up images:'
+    docker rmi `docker images --no-trunc|grep '<none>'|awk '{print $3}'`
+}
+alias dcleanup=docker_cleanup_all
+alias ack='ack-grep'
 
-PATH=$HOME/bin:$PATH
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+fpath=($HOME/.zsh/completion $fpath)
+compinit
