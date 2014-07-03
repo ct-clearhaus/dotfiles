@@ -13,6 +13,9 @@ Bundle 'Syntastic'
 Bundle 'git://github.com/digitaltoad/vim-jade.git'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'ekalinin/Dockerfile.vim'
+Bundle 'git://github.com/jamessan/vim-gnupg.git'
+Bundle 'git://github.com/Rykka/riv.vim'
+Bundle 'mileszs/ack.vim'
 
 Bundle 'https://github.com/altercation/vim-colors-solarized.git'
 colorscheme solarized
@@ -48,3 +51,7 @@ highlight ColorColumn term=reverse cterm=reverse
 call matchadd('ColorColumn', '\%80v', 100)
 
 cmap w!! %!sudo tee > /dev/null %
+
+let g:syntastic_mode_map = { 'passive_filetypes': ['rst'] }
+
+set foldlevel=8
