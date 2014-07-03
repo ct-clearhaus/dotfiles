@@ -4,10 +4,11 @@
     prompt = false
 [alias]
     vdiff = difftool
-    st = status
+    st = status --short
     co = checkout
     br = branch
     ci = commit -v -S
+    logd = log -p --full-diff
 [user]
     name = Casper Thomsen
     email = ct@clearhaus.com
